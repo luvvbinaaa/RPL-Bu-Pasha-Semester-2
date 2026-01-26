@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Usulan Lokasi Toko barang lusyu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6c9f6 0%, #c5ffc4 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        form {
+            background: white;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] + label,
+        input[type="checkbox"] + label {
+            display: inline;
+            margin: 0;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form Usulan Lokasi Toko barang lusyu </h2>
+
+    <form action="#" method="post">
+
+        <label>Nama Lengkap:</label><br>
+        <input type="text" name="nama"><br><br>
+        <label>Alamat:</label><br>
+        <textarea name="alamat" rows="4" cols="30"></textarea><br><br>
+        <label>Nomor Telepon:</label><br>
+        <input type="text" name="telepon"><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>   
+
+        <h3>Detail Lokasi yang Diusulkan</h3>   
+        
+        <label>Bentuk Lokasi:</label><br>
+        <select name="bentuk_lokasi">
+            <option value="ruko_gudang">Ruko + Gudang</option>
+            <option value="ruko">Ruko</option>
+            <option value="rumah">Rumah Tinggal</option>
+            <option value="tanah">Tanah Kosong</option>
+        </select><br><br>
+
+        <label>Status Kepemilikan:</label><br>
+        <input type="radio" name="status" value="milik"> Milik Sendiri
+        <input type="radio" name="status" value="sewa"> Sewa
+        <br><br>
+
+        <label>Fasilitas Pendukung:</label><br>
+        <input type="checkbox" name="parkir"> Tersedia Lahan Parkir
+        <input type="checkbox" name="akses_jalan"> Akses Jalan Lebar
+        <input type="checkbox" name="dekat_pusat"> Dekat Pusat Keramaian
+        <input type="checkbox" name="dekat_sekolah"> Dekat Sekolah
+        <br><br>
+
+        <label>Perizinan Pendirian Bangunan</label><br>
+        <input type="checkbox" name="izin_lengkap"> Izin Lengkap
+        <input type="checkbox" name="izin_proses"> Sedang Proses Izin
+        <input type="checkbox" name="izin_tidak"> Tidak Ada Izin
+        <br><br>
+
+        <label>Keterangan Tambahan:</label><br>
+        <textarea name="keterangan" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Kirim">
+
+    </form>
+
+</body>
+</html>
