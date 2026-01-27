@@ -1,0 +1,30 @@
+/*tag HTML*/
+body {
+    background-color: rgb(255, 167, 214);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+header {
+    background-color: rgb(255, 109, 182);
+}
+
+/*id - tidak disarankan*/
+#pink {
+    background-color: rgb(205, 226, 252);
+    text-decoration: dashed;
+}
+
+/*class - disarankan*/
+.pink {
+    background-color: rgb(255, 117, 163);
+}
+
+/*tag.class*/
+p.pink{
+    color:rgb(255, 255, 255);
+}
+
+.miring{
+    text-transform: italic;
+}
