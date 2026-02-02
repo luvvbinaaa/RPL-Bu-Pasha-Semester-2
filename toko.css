@@ -1,0 +1,59 @@
+/* Background halaman */
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container utama */
+.container {
+    width: 850px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #f8bbd0; /* pink lembut */
+}
+
+/* Text */
+h1 {
+    color: #e91e63;
+}
+
+.deskripsi {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Produk sejajar */
+.produk-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Box produk */
+.produk {
+    width: 30%;
+    background-color: #e3f2fd; /* biru muda */
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #90caf9;
+    text-align: left;
+}
+
+.produk h3 {
+    color: #1976d2;
+    text-align: center;
+}
+
+/* List produk */
+.produk ul {
+    padding-left: 20px;
+}
+
+.produk li {
+    font-size: 14px;
+    color: #333;
+}
