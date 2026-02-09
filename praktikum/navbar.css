@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-horizontal {
+    background-color: lightblue;
+}
+
+.navbar-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.navbar-horizontal a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-horizontal a:hover {
+    background-color: rgb(252, 215, 254);
+    color: white;
+}

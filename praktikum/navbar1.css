@@ -1,0 +1,25 @@
+.layout {
+    display: flex;
+}
+
+.navbar-vertical {
+    width: 200px;
+    min-height: 100vh;
+    background-color: rgb(127, 157, 255);
+}
+
+.navbar-vertical a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-vertical a:hover {
+    background-color: rgb(255, 172, 252);
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
